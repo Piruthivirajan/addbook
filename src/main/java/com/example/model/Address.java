@@ -23,7 +23,7 @@ public class Address {
 	private String email;
 	
 	@Column
-	private Integer contact;
+	private Long contact;
 
 	public Long getId() {
 		return id;
@@ -57,11 +57,11 @@ public class Address {
 		this.email = email;
 	}
 
-	public Integer getContact() {
+	public Long getContact() {
 		return contact;
 	}
 
-	public void setContact(Integer contact) {
+	public void setContact(Long contact) {
 		this.contact = contact;
 	}
 	
