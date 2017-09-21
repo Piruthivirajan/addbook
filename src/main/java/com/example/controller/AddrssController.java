@@ -37,8 +37,8 @@ public class AddrssController {
 		}
 		catch(Exception e)
 		{
-			result="fail";
-			throw e;	
+			result="fail "+e;
+			//throw e;	
 		}
 		return result;
 		
