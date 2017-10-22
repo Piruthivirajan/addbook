@@ -62,7 +62,7 @@ public class AddrssController {
 		
 
 	}
-	@RequestMapping(value = "/{id}",method = RequestMethod.PUT)
+	@RequestMapping(value = "/update/{id}",method = RequestMethod.PUT)
 	public String update(@RequestBody Address address,@PathVariable Long id) {
 		String result="";
 		try{
