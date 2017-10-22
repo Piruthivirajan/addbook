@@ -49,17 +49,17 @@ public class AddrssController {
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-	public String delete(@PathVariable Long id) {
-		String result="";
+	public void delete(@PathVariable Long id) {
+		
 		try{
-			result="success";
+			
 			addressRepository.delete(id);
 		}
 		catch(Exception e){
-			result="fail";
+			
 		}
 		
-		return result;
+		
 
 	}
 	@RequestMapping(value = "/{id}",method = RequestMethod.PUT)
