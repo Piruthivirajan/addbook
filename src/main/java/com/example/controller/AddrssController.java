@@ -43,7 +43,7 @@ public class AddrssController {
 		return result;
 		
 	}
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/find/{id}", method = RequestMethod.GET)
 	public Address findone(@PathVariable Long id) {
 		return addressRepository.findOne(id);
 	}
